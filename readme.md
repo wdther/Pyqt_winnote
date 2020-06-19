@@ -22,6 +22,18 @@
 --------------------
 * Bilibili
 
+<video 
+    width="676" 
+    height="514"
+    id="video" 
+    controls="" 
+    preload="none"> 
+    <source id="mp4" 
+    src="//player.bilibili.com/player.html?aid=243315047&bvid=BV1vv411z7vS&cid=195098855&page=1" 
+    type="video/mp4">
+</video>
+
+
 ### 许可证
 * Apache.(留个名字就行)
 <b> <b/>
