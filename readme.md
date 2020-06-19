@@ -21,6 +21,7 @@
 ### 视频示例
 --------------------
 * Bilibili
+<iframe src="//player.bilibili.com/player.html?aid=243315047&bvid=BV1vv411z7vS&cid=195098855&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 <video 
     width="676" 
