@@ -1,0 +1,102 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'Ui_set.ui'
+#
+# Created by: PyQt5 UI code generator 5.12.3
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(405, 333)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("设置.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        MainWindow.setWindowIcon(icon)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
+        self.gridLayout.setContentsMargins(0, 5, 0, 0)
+        self.gridLayout.setSpacing(0)
+        self.gridLayout.setObjectName("gridLayout")
+        self.tabWidget = QtWidgets.QTabWidget(self.centralwidget)
+        font = QtGui.QFont()
+        font.setFamily("幼圆")
+        font.setPointSize(12)
+        self.tabWidget.setFont(font)
+        self.tabWidget.setTabShape(QtWidgets.QTabWidget.Triangular)
+        self.tabWidget.setObjectName("tabWidget")
+        self.tab = QtWidgets.QWidget()
+        self.tab.setObjectName("tab")
+        self.groupBox = QtWidgets.QGroupBox(self.tab)
+        self.groupBox.setGeometry(QtCore.QRect(0, 10, 391, 211))
+        self.groupBox.setObjectName("groupBox")
+        self.layoutWidget = QtWidgets.QWidget(self.groupBox)
+        self.layoutWidget.setGeometry(QtCore.QRect(20, 30, 231, 29))
+        self.layoutWidget.setObjectName("layoutWidget")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.layoutWidget)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.label = QtWidgets.QLabel(self.layoutWidget)
+        self.label.setObjectName("label")
+        self.horizontalLayout.addWidget(self.label)
+        self.pattern = QtWidgets.QComboBox(self.layoutWidget)
+        self.pattern.setObjectName("pattern")
+        self.pattern.addItem("")
+        self.pattern.addItem("")
+        self.pattern.addItem("")
+        self.pattern.addItem("")
+        self.pattern.addItem("")
+        self.pattern.addItem("")
+        self.horizontalLayout.addWidget(self.pattern)
+        self.horizontalLayout.setStretch(0, 1)
+        self.horizontalLayout.setStretch(1, 2)
+        self.layoutWidget1 = QtWidgets.QWidget(self.tab)
+        self.layoutWidget1.setGeometry(QtCore.QRect(40, 260, 300, 31))
+        self.layoutWidget1.setObjectName("layoutWidget1")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.layoutWidget1)
+        self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.cancel = QtWidgets.QPushButton(self.layoutWidget1)
+        self.cancel.setStyleSheet("background-color: rgba(85, 85, 0,0);\n"
+"background-color: rgba(255, 255, 255,0.5);")
+        self.cancel.setObjectName("cancel")
+        self.horizontalLayout_2.addWidget(self.cancel)
+        spacerItem = QtWidgets.QSpacerItem(98, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem)
+        self.ok = QtWidgets.QPushButton(self.layoutWidget1)
+        self.ok.setStyleSheet("background-color: rgba(255, 255, 255,0.5);")
+        self.ok.setObjectName("ok")
+        self.horizontalLayout_2.addWidget(self.ok)
+        self.tabWidget.addTab(self.tab, "")
+        self.tab_2 = QtWidgets.QWidget()
+        self.tab_2.setObjectName("tab_2")
+        self.tabWidget.addTab(self.tab_2, "")
+        self.gridLayout.addWidget(self.tabWidget, 0, 0, 1, 1)
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        self.tabWidget.setCurrentIndex(0)
+        self.cancel.clicked.connect(MainWindow.close)
+        self.ok.clicked.connect(MainWindow.choosepattern)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "设置"))
+        self.groupBox.setTitle(_translate("MainWindow", "样式"))
+        self.label.setText(_translate("MainWindow", "模板"))
+        self.pattern.setItemText(0, _translate("MainWindow", "小鸡"))
+        self.pattern.setItemText(1, _translate("MainWindow", "王俊凯-蓝色"))
+        self.pattern.setItemText(2, _translate("MainWindow", "王俊凯-红色"))
+        self.pattern.setItemText(3, _translate("MainWindow", "伍六七"))
+        self.pattern.setItemText(4, _translate("MainWindow", "红小豆举牌"))
+        self.pattern.setItemText(5, _translate("MainWindow", "少司命"))
+        self.cancel.setText(_translate("MainWindow", "取消"))
+        self.ok.setText(_translate("MainWindow", "完成"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "设置"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "让我想想"))
